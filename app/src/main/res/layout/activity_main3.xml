@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/video_calling_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="140dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Name"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/name5"
+            style="@style/AuthoEditText"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Email"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/name4"
+            style="@style/AuthoEditText"
+            android:background="@drawable/edittext_background" />
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Password"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/name3"
+            style="@style/AuthoEditText"
+            android:maxLines="1"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Confirm Password"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/name2"
+            style="@style/AuthoEditText"
+            android:maxLines="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:text="Sign Up"
+        style="@style/AlertDialog.Butt"
+        app:layout_constraintBottom_toTopOf="@+id/but"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/but"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:text="Cancel"
+        style="@style/AlertDialog.Butt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
